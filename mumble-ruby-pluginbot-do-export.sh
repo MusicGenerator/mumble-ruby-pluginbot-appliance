@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This scripts automates stuff that needs to be done before the Mumble-Ruby-Pluginbot Virtualbox appliance can be exported.
-# https://wiki.natenom.com/w/VirtualBox_Appliance_for_Mumble-Ruby-Pluginbot
+# http://mumble-ruby-pluginbot.readthedocs.io/en/latest/appliance.html
 
 set -x
 
