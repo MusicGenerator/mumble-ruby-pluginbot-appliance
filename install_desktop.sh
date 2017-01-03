@@ -42,8 +42,14 @@ TerminalOptions=
 Type=Application
 EOF
 
+# Set appropriate permissions to avoid security message on start
+chmod u+x /home/botmaster/.config/autostart/botlogging.desktop
+
 # Also copy botlogging.desktop to Desktop
 cp /home/botmaster/.config/autostart/botlogging.desktop /home/botmaster/Desktop/
+
+
+
 
 #autostart gmpc in foreground
 #autostart music folder in foreground
