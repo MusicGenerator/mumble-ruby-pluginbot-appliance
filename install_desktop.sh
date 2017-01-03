@@ -91,8 +91,3 @@ chmod u+x /home/botmaster/Desktop/botedit.desktop
 chmod u+x /home/botmaster/Desktop/gmpc.desktop
 
 sudo systemctl enable xdm
-
-
-#autostart gmpc in foreground
-#autostart music folder in foreground
-#autostart log window in foreground
