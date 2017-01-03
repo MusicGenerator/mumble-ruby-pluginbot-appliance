@@ -1,10 +1,4 @@
-# todo...
-# open bot configuration in editor on autostart
-
-# Install one by one because of plasma ???
 sudo apt-get --allow-unauthenticated -qy install xserver-xorg xfce4 xinit xdm gmpc gmpc-plugins gedit
-
-#--no-install-recommends 
 
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
@@ -80,7 +74,7 @@ MimeType=
 Name=Edit your bots configuration file
 Path=
 StartupNotify=true
-Terminal=true
+Terminal=false
 TerminalOptions=
 Type=Application
 EOF
