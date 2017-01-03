@@ -12,6 +12,9 @@ mkdir /home/botmaster/.autostart/
 # Enable autostart for gmpc
 cp /usr/share/applications/gmpc.desktop /home/botmaster/.config/autostart/
 
+# And also create a shortcut on the desktop
+cp /usr/share/applications/gmpc.desktop /home/botmaster/Desktop/
+
 # Create config for gmpc
 cat<<EOF > /home/botmaster/.config/gmpc/profiles.cfg
 [Default]
@@ -38,6 +41,9 @@ Terminal=true
 TerminalOptions=
 Type=Application
 EOF
+
+# Also copy botlogging.desktop to Desktop
+cp /home/botmaster/.config/autostart/botlogging.desktop /home/botmaster/Desktop/
 
 #autostart gmpc in foreground
 #autostart music folder in foreground
