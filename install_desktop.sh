@@ -1,6 +1,5 @@
 sudo apt-get install xinit xfce4 sddm gmpc gmpc-plugins
 sudo systemctl enable sddm
-#sudo systemctl restart sddm
 
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
