@@ -5,7 +5,7 @@ some stuff for creating/updating/exporting a VirtualBox Appliance for Mumble-Rub
 See http://mumble-ruby-pluginbot.readthedocs.io/en/master/appliance.html
 
 ## Things that have to be done before exporting the VBox as a virtual appliance:
-This was automated, see [this script](https://github.com/Natenom/mumble-ruby-related/blob/master/scripts/mumble-ruby-pluginbot-do-export.sh)
+This was automated, see mumble-ruby-pluginbot-do-export.sh in this repository.
 
 Then close the virtualbox and select "send shutdown signal".
 
