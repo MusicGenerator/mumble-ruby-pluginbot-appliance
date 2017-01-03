@@ -52,7 +52,7 @@ chmod u+x /home/botmaster/.config/autostart/botlogging.desktop
 cp /home/botmaster/.config/autostart/botlogging.desktop /home/botmaster/Desktop/
 
 
-sudo systemctl enable sddm
+sudo systemctl enable xdm
 
 
 #autostart gmpc in foreground
