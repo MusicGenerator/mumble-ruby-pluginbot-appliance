@@ -10,15 +10,18 @@ sudo apt-get --allow-unauthenticated -qy install xserver-xorg xfce4 xinit xdm gm
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
 mkdir -p /home/botmaster/.config/autostart/
-mkdir /home/botmaster/.config/gmpc/
 
 ln -s /home/botmaster/music/ /home/botmaster/Desktop/music_of_your_bot
 
 # Enable autostart for gmpc
+mkdir /home/botmaster/.config/gmpc/
 cp /usr/share/applications/gmpc.desktop /home/botmaster/.config/autostart/
 
-# And also create a shortcut on the desktop
-cp /usr/share/applications/gmpc.desktop /home/botmaster/Desktop/
+# Do not run first start assistant of gmpc
+cat<<EOF > /home/botmaster/.config/gmpc/gmpc.cfg
+[Default]
+first_run="0"
+EOF
 
 # Create config for gmpc
 cat<<EOF > /home/botmaster/.config/gmpc/profiles.cfg
@@ -31,6 +34,9 @@ useauth="0"
 music directory="/home/botmaster/music/"
 db update time="1445647261"
 EOF
+
+# And also create a shortcut on the desktop
+cp /usr/share/applications/gmpc.desktop /home/botmaster/Desktop/
 
 # Create .desktop for bot live logging and write it to autostart
 cat<<EOF > /home/botmaster/.config/autostart/botlogging.desktop
