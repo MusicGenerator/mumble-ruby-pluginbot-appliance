@@ -1,7 +1,8 @@
 # Install one by one because of plasma ???
 sudo apt-get --allow-unauthenticated --no-install-recommends -qy install xfce4
-sudo apt-get --allow-unauthenticated --no-install-recommends -qy install sddm xinit
-sudp apt-get --allow-unauthenticated --no-install-recommends -qy install gmpc gmpc-plugins
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install xinit
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install sddm
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install gmpc gmpc-plugins
 
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
