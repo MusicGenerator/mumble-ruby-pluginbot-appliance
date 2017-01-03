@@ -1,4 +1,8 @@
-sudo apt-get install xinit xfce4 sddm gmpc gmpc-plugins
+# Install one by one because of plasma ???
+sudo apt-get install xfce4
+sudo apt-get install sddm xinit
+sudp apt-get install gmpc gmpc-plugins
+
 sudo systemctl enable sddm
 
 mkdir /home/botmaster/Desktop/
