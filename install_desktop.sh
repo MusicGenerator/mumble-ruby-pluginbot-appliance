@@ -3,8 +3,7 @@
 # disable assistant on first start of gmpc
 
 # Install one by one because of plasma ???
-sudo apt-get --allow-unauthenticated --no-install-recommends -qy install xfce4 xinit xdm gmpc gmpc-plugins
-sudo apt-get --allow-unauthenticated -qy install xserver-xorg
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install xserver-xorg xfce4 xinit xdm gmpc gmpc-plugins
 
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
