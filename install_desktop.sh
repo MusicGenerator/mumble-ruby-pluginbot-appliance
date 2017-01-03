@@ -1,9 +1,8 @@
 # todo...
-# disable all but xfce in sddm
-# disable assistant on first start of gmpc
+# open bot configuration in editor on autostart
 
 # Install one by one because of plasma ???
-sudo apt-get --allow-unauthenticated -qy install xserver-xorg xfce4 xinit xdm gmpc gmpc-plugins
+sudo apt-get --allow-unauthenticated -qy install xserver-xorg xfce4 xinit xdm gmpc gmpc-plugins gedit
 
 #--no-install-recommends 
 
@@ -46,6 +45,36 @@ GenericName=Watch bot logs live
 Icon=exec
 MimeType=
 Name=Watch bot logs live
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+EOF
+
+# Create .desktop for bot restart and write it to autostart
+cat<<EOF > /home/botmaster/.config/autostart/botrestart.desktop
+[Desktop Entry]
+Exec=/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh restart
+GenericName=Restart your bot
+Icon=exec
+MimeType=
+Name=Restart your bot
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+EOF
+
+# Create .desktop for editing the bots configuration file and write it to autostart
+cat<<EOF > /home/botmaster/.config/autostart/botedit.desktop
+[Desktop Entry]
+Exec=/usr/bin/gedit /home/botmaster/src/bot1_conf.yml
+GenericName=Edit your bots configuration file
+Icon=exec
+MimeType=
+Name=Edit your bots configuration file
 Path=
 StartupNotify=true
 Terminal=true
