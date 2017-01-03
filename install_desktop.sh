@@ -87,10 +87,13 @@ EOF
 
 # Set appropriate permissions to avoid security message on start
 chmod u+x /home/botmaster/.config/autostart/botlogging.desktop
+chmod u+x /home/botmaster/.config/autostart/botrestart.desktop
+chmod u+x /home/botmaster/.config/autostart/botedit.desktop
 
-# Also copy botlogging.desktop to Desktop
+# Also copy bot shortcuts to Desktop
 cp /home/botmaster/.config/autostart/botlogging.desktop /home/botmaster/Desktop/
-
+cp /home/botmaster/.config/autostart/botrestart.desktop /home/botmaster/Desktop/
+cp /home/botmaster/.config/autostart/botedit.desktop /home/botmaster/Desktop/
 
 sudo systemctl enable xdm
 
