@@ -1,17 +1,14 @@
 # Install one by one because of plasma ???
-sudo apt-get install xfce4
-sudo apt-get install sddm xinit
-sudp apt-get install gmpc gmpc-plugins
-
-sudo systemctl enable sddm
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install xfce4
+sudo apt-get --allow-unauthenticated --no-install-recommends -qy install sddm xinit
+sudp apt-get --allow-unauthenticated --no-install-recommends -qy install gmpc gmpc-plugins
 
 mkdir /home/botmaster/Desktop/
 mkdir /home/botmaster/music/drop_your_music_here
-
-ln -s /home/botmaster/music/ /home/botmaster/Desktop/music_of_your_bot
-
 mkdir -p /home/botmaster/.config/autostart/
 mkdir /home/botmaster/.config/gmpc/
+
+ln -s /home/botmaster/music/ /home/botmaster/Desktop/music_of_your_bot
 
 # Enable autostart for gmpc
 cp /usr/share/applications/gmpc.desktop /home/botmaster/.config/autostart/
@@ -53,6 +50,7 @@ chmod u+x /home/botmaster/.config/autostart/botlogging.desktop
 cp /home/botmaster/.config/autostart/botlogging.desktop /home/botmaster/Desktop/
 
 
+sudo systemctl enable sddm
 
 
 #autostart gmpc in foreground
