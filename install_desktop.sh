@@ -6,8 +6,8 @@ mkdir /home/botmaster/music/drop_your_music_here
 
 ln -s /home/botmaster/music/ /home/botmaster/Desktop/music_of_your_bot
 
+mkdir -p /home/botmaster/.config/autostart/
 mkdir /home/botmaster/.config/gmpc/
-mkdir /home/botmaster/.autostart/
 
 # Enable autostart for gmpc
 cp /usr/share/applications/gmpc.desktop /home/botmaster/.config/autostart/
