@@ -42,7 +42,7 @@ cat<<EOF > /home/botmaster/.config/autostart/botlogging.desktop
 [Desktop Entry]
 Exec=/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh log
 GenericName=Watch bot logs live
-Icon=exec
+Icon=logviewer
 MimeType=
 Name=Watch bot logs live
 Path=
@@ -57,7 +57,7 @@ cat<<EOF > /home/botmaster/.config/autostart/botrestart.desktop
 [Desktop Entry]
 Exec=/home/botmaster/src/mumble-ruby-pluginbot/scripts/manage.sh restart
 GenericName=Restart your bot
-Icon=exec
+Icon=view-refresh
 MimeType=
 Name=Restart your bot
 Path=
@@ -72,7 +72,7 @@ cat<<EOF > /home/botmaster/.config/autostart/botedit.desktop
 [Desktop Entry]
 Exec=/usr/bin/gedit /home/botmaster/src/bot1_conf.yml
 GenericName=Edit your bots configuration file
-Icon=exec
+Icon=gconf-editor
 MimeType=
 Name=Edit your bots configuration file
 Path=
