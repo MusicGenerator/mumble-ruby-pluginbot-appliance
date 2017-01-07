@@ -20,4 +20,7 @@ sudo fstrim -v /
 sudo fstrim -v /home
 history -c
 
+sudo find /var/ -iname "*.log" -type f -delete
+
+
 echo "Export preparations done..."
