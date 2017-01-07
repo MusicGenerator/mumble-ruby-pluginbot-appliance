@@ -21,7 +21,9 @@ Simply login as botmaster and run:
 
 ### Then export the appliance
     
-    export VERSION="0.10.0-1 GUI_Terminal" VBoxManage export "Mumble-Ruby-Pluginbot" --output "$HOME/Mumble-Ruby-Pluginbot-${VERSION}.ova" \
-    --vsys 0 --ovf20 --product "Virtualbox appliance for Mumble-Ruby-Pluginbot ${VERSION}" \
-    --producturl "http://mumble-ruby-pluginbot.readthedocs.io/en/master/appliance.html" \
-    --vendor Natenom --vendorurl "https://www.natenom.com" --version "${VAVERSION}"
+    export VAVERSION="0.10.0-1-Terminal"; VBoxManage export "Mumble-Ruby-Pluginbot 0.10.0 Terminal" \
+     --output "$HOME/Mumble-Ruby-Pluginbot-${VAVERSION}.ova" --vsys 0 --ovf20 \
+     --product "Virtualbox appliance for Mumble-Ruby-Pluginbot" \
+     --producturl "http://mumble-ruby-pluginbot.readthedocs.io/en/master/appliance.html" \
+     --vendor Natenom --vendorurl "https://www.natenom.com" --version "${VAVERSION}"
+
