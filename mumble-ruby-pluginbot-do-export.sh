@@ -16,11 +16,13 @@ sudo apt-get dist-upgrade
 sudo apt-get clean
 
 ~/src/mumble-ruby-pluginbot/scripts/updater.sh
-sudo fstrim -v /
-sudo fstrim -v /home
-history -c
+
+rm /home/botmaster/.bash_history
+sudo rm /root/.bash_history
 
 sudo find /var/ -iname "*log" -type f -delete
 
+sudo fstrim -v /
+sudo fstrim -v /home
 
 echo "Export preparations done..."
