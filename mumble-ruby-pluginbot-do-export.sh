@@ -9,6 +9,10 @@ rm /home/botmaster/logs/*.log
 rm -rf /home/botmaster/music /home/botmaster/temp
 mkdir /home/botmaster/music /home/botmaster/temp
 
+# Remove existing certificates
+rm -rf /home/botmaster/certs
+mkdir /home/botmaster/certs
+
 mpc -p 7701 clear
 
 sudo apt-get update
