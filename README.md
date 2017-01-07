@@ -14,7 +14,14 @@ Simply login as botmaster and run:
     ~/src/.export/mumble-ruby-pluginbot-do-export.sh
 
 ## Use the following command to export it on the command line interface
-    export VAVERSION=2.0.6; VBoxManage export "Mumble-Ruby-Pluginbot" --output "$HOME/Mumble-Ruby-Pluginbot-${VAVERSION}.ova" \
-    --vsys 0 --ovf20 --product "Virtualbox appliance for Mumble-Ruby-Pluginbot" \
-    --producturl "https://wiki.natenom.com/w/VirtualBox_Appliance_for_Mumble-Ruby-Pluginbot" \
+### First shrink both disks
+    
+    VBoxManage modifymedium --compact /path/to/disk1.vdi
+    VBoxManage modifymedium --compact /path/to/disk1.vdi
+
+### Then export the appliance
+    
+    export VERSION="0.10.0-1 GUI_Terminal" VBoxManage export "Mumble-Ruby-Pluginbot" --output "$HOME/Mumble-Ruby-Pluginbot-${VERSION}.ova" \
+    --vsys 0 --ovf20 --product "Virtualbox appliance for Mumble-Ruby-Pluginbot ${VERSION}" \
+    --producturl "http://mumble-ruby-pluginbot.readthedocs.io/en/master/appliance.html" \
     --vendor Natenom --vendorurl "https://www.natenom.com" --version "${VAVERSION}"
