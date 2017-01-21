@@ -49,6 +49,10 @@ Simply login as botmaster and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/install_desktop.sh
 
+    sudo dpkg --configure -a
+
+    ~/src/.export/mumble-ruby-pluginbot-appliance/install_desktop.sh
+
 * Reboot VM and login on the desktop, do the first steps with GMPC.
 * Switch to VT2 and run:
 
