@@ -22,7 +22,6 @@ sudo apt-get clean
 history -c
 rm /home/botmaster/.bash_history
 
-sudo history -c
 sudo rm /root/.bash_history
 
 sudo find /var/ -iname "*log" -type f -delete
