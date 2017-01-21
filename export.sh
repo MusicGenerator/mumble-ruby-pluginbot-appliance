@@ -3,7 +3,7 @@
 # This scripts automates stuff that needs to be done before the Mumble-Ruby-Pluginbot Virtualbox appliance can be exported.
 # http://mumble-ruby-pluginbot.readthedocs.io/en/latest/appliance.html
 
-rm /home/botmaster/logs/*.log
+rm -rf /home/botmaster/logs/*.log
 rm -rf /home/botmaster/music /home/botmaster/temp
 mkdir /home/botmaster/music /home/botmaster/temp
 
@@ -20,9 +20,9 @@ sudo apt-get clean
 ~/src/mumble-ruby-pluginbot/scripts/updater.sh
 
 history -c
-rm /home/botmaster/.bash_history
+rm -rf /home/botmaster/.bash_history
 
-sudo rm /root/.bash_history
+sudo rm -rf /root/.bash_history
 
 sudo find /var/ -iname "*log" -type f -delete
 
