@@ -4,24 +4,10 @@ some stuff for creating/updating/exporting a VirtualBox Appliance for Mumble-Rub
 ## Documentation about the Appliance
 See http://mumble-ruby-pluginbot.rtfd.io/en/master/appliance.html
 
-## Things that have to be done before exporting the VBox as a virtual appliance:
-This was automated, see mumble-ruby-pluginbot-do-export.sh in this repository.
+## Export the appliance by hand
+### Terminal version
 
-Then close the virtualbox and select "send shutdown signal".
-
-Simply login as botmaster and run:
-
-    ~/src/.export/mumble-ruby-pluginbot-appliance/export.sh
-
-## Use the following command to export it on the command line interface
-### First shrink both disks
-
-
-
-### Then export the appliance by hand
-#### Terminal version
-
-Start the VM and run:
+Start the VM, login as botmaster and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/export.sh
 
@@ -44,11 +30,11 @@ Open a Terminal on your PC and do:
 
 Create a snapshot for the current version for the VM.
 
-#### GUI version
+### GUI version
 
 Clone the VM "Mumble-Ruby-Pluginbot" to "Mumble-Ruby-Pluginbot GUI".
 
-Start the new VM and run:
+Start the VM, login as botmaster and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/install_desktop.sh
 
