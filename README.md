@@ -21,13 +21,15 @@ Simply login as botmaster and run:
 ### Then export the appliance by hand
 #### Terminal version
 
-* Start the VM and run:
+Start the VM and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/export.sh
 
-* Shutdown VM.
-* Remove all snapshots.
-* Open a Terminal on your PC and do:
+Shutdown VM.
+
+Remove all snapshots.
+
+Open a Terminal on your PC and do:
 
     VBoxManage modifymedium --compact /path/to/disk1.vdi
     VBoxManage modifymedium --compact /path/to/disk1.vdi
@@ -40,12 +42,13 @@ Simply login as botmaster and run:
      --producturl "http://mumble-ruby-pluginbot.rtfd.io/en/master/appliance.html" \
      --vendor Natenom --vendorurl "https://www.natenom.com" --version "${VAVERSION}"
 
-* Create a snapshot for the current version for the VM.
+Create a snapshot for the current version for the VM.
 
 #### GUI version
 
-* Clone the VM "Mumble-Ruby-Pluginbot" to "Mumble-Ruby-Pluginbot GUI".
-* Start the new VM and run:
+Clone the VM "Mumble-Ruby-Pluginbot" to "Mumble-Ruby-Pluginbot GUI".
+
+Start the new VM and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/install_desktop.sh
 
@@ -53,14 +56,17 @@ Simply login as botmaster and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/install_desktop.sh
 
-* Reboot VM and login on the desktop, do the first steps with GMPC.
-* Switch to VT2 and run:
+Reboot VM and login on the desktop, do the first steps with GMPC.
+
+Switch to VT2 and run:
 
     ~/src/.export/mumble-ruby-pluginbot-appliance/export.sh
 
-* Shutdown VM.
-* Remove all snapshots.
-* Open a terminal on your PC and do:
+Shutdown VM.
+
+Remove all snapshots.
+
+Open a terminal on your PC and do:
 
     VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
     VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
@@ -73,4 +79,4 @@ Simply login as botmaster and run:
      --producturl "http://mumble-ruby-pluginbot.rtfd.io/en/master/appliance.html" \
      --vendor Natenom --vendorurl "https://www.natenom.com" --version "${VAVERSION}"
 
-* Remove the cloned VM.
+Remove the cloned VM.
