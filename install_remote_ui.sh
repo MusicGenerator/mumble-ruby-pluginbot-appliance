@@ -41,7 +41,7 @@ cgi.assign                 = ( ".rb"  => "/usr/bin/ruby" )
 index-file.names           += ("index.rb",   "default.rb" )
 EOF
 
-systemctl restart lighttpd
-systemctl restart mumblerubypluginbot
+sudo systemctl restart lighttpd
+sudo systemctl restart mumblerubypluginbot
 
 echo "Ready :) Now you can create a port forwarding from outside to port 80 on this machine."
