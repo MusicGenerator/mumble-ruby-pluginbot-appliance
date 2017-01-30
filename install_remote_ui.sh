@@ -46,4 +46,4 @@ sudo mv /tmp/lighttpd.config /etc/lighttpd/lighttpd.conf
 sudo systemctl restart lighttpd
 sudo systemctl restart mumblerubypluginbot
 
-echo "Ready :) Now you can create a port forwarding from outside to port 80 on this machine."
+echo -en "\n\n\n\nReady :) Now you can create a port forwarding from outside to port 80 on this machine.\n"
