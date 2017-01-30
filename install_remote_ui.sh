@@ -13,7 +13,7 @@ cp /home/botmaster/src/mumble-ruby-pluginbot/config/config.yml /home/botmaster/s
 sed -r -i -e 's/(remoteui: false)/remoteui: true/g' /home/botmaster/src/bot1_conf.yml
 
 # Overwrite default lighttpd config
-cat<<EOF > /etc/lighttpd/lighttpd.conf
+sudo cat<<EOF > /etc/lighttpd/lighttpd.conf
 server.port             = 80
 server.username         = "botmaster"
 server.groupname        = "botmaster"
