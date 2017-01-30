@@ -33,6 +33,7 @@ mimetype.assign         = (
                                 ".gif" => "image/gif",
                                 ".png" => "image/png",
                                 "" => "application/octet-stream"
+                          )
 
 server.modules += ( "mod_cgi" )
 
@@ -42,6 +43,8 @@ index-file.names           += ("index.rb",   "default.rb" )
 EOF
 
 sudo mv /tmp/lighttpd.config /etc/lighttpd/lighttpd.conf
+
+sudo lighttpd-disable-mod javascript-alias
 
 sudo systemctl restart lighttpd
 sudo systemctl restart mumblerubypluginbot
