@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install a development environment for the Mumble-Ruby-Pluginbot remoteui
-
+sudo apt-get update
 sudo apt-get --allow-unauthenticated -qy install ruby lighttpd
 
 cd /home/botmaster/src/mumble-ruby-pluginbot
@@ -43,8 +43,7 @@ index-file.names           += ("index.rb",   "default.rb" )
 EOF
 
 sudo mv /tmp/lighttpd.config /etc/lighttpd/lighttpd.conf
-
-sudo lighttpd-disable-mod javascript-alias
+sudo chown root:root /etc/lighttpd/lighttpd.conf
 
 sudo systemctl restart lighttpd
 sudo systemctl restart mumblerubypluginbot
