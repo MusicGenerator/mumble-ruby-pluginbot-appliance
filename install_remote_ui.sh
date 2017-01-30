@@ -48,4 +48,4 @@ sudo chown root:root /etc/lighttpd/lighttpd.conf
 sudo systemctl restart lighttpd
 sudo systemctl restart mumblerubypluginbot
 
-echo -en "\n\n\n\nReady :) Now you can create a port forwarding from outside to port 80 on this machine.\n"
+echo -en "\n\n\n\nReady :)\n\nNow you can create a port forwarding from outside to port 80 on this machine.\n\n\n"
