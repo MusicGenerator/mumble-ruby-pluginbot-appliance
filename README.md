@@ -58,7 +58,7 @@ Remove all snapshots.
 Open a terminal on your PC and do:
 
     VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
-    VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
+    VBoxManage modifymedium --compact /path/to_cloned/disk2.vdi
     
     If the above commands do not work because of an error use the UUID of the discs instead that is shown in the error message.
 
