@@ -6,6 +6,7 @@ See http://mumble-ruby-pluginbot.rtfd.io/en/master/appliance.html
 
 ## Export the appliance by hand
 ### Terminal version
+Clone the VM "Mumble-Ruby-Pluginbot" to "Mumble-Ruby-Pluginbot Terminal".
 
 Start the VM, login as botmaster and run:
 
@@ -18,9 +19,11 @@ Remove all snapshots.
 Open a Terminal on your PC and do:
 
     VBoxManage modifymedium --compact /path/to/disk1.vdi
-    VBoxManage modifymedium --compact /path/to/disk1.vdi
+    VBoxManage modifymedium --compact /path/to/disk2.vdi
+    
+    If the above commands do not work because of an error use the UUID of the discs instead that is shown in the error message.
 
-    export VAVERSION="0.10.2-Terminal"
+    export VAVERSION="0.10.5-Terminal"
 
     VBoxManage export "Mumble-Ruby-Pluginbot" \
      --output "$HOME/Mumble-Ruby-Pluginbot-${VAVERSION}.ova" --vsys 0 --ovf20 \
@@ -56,8 +59,10 @@ Open a terminal on your PC and do:
 
     VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
     VBoxManage modifymedium --compact /path/to_cloned/disk1.vdi
+    
+    If the above commands do not work because of an error use the UUID of the discs instead that is shown in the error message.
 
-    export VAVERSION="0.10.2-GUI"
+    export VAVERSION="0.10.5-GUI"
 
     VBoxManage export "Mumble-Ruby-Pluginbot GUI" \
      --output "$HOME/Mumble-Ruby-Pluginbot-${VAVERSION}.ova" --vsys 0 --ovf20 \
