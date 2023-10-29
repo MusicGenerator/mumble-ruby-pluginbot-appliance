@@ -2,7 +2,7 @@
 some stuff for creating/updating/exporting a VirtualBox Appliance for Mumble-Ruby-Pluginbot.
 
 ## Documentation about the Appliance
-See http://mumble-ruby-pluginbot.rtfd.io/en/master/appliance.html
+See https://github.com/MusicGenerator/mumble-ruby-pluginbot-docs/blob/master/appliance.rst
 
 ## Export the appliance by hand
 ### Terminal version
